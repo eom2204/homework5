@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top:12px;
+}
+h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+}
+
+p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+    transition: 200ms ease-in-out;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.container-inner {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.header, #skills, #contacts {
+    background: #F6F6F6;
+}
+
+#about-me, #portfolio {
+    background: #E5E5E5;
+}
+
+.title {
+    margin-bottom:50px;
+}
+
+.title-one {
+    margin-bottom: 20px;
+}
+
+.nav-list {
+    margin: 0 auto;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav-list-item {
+    margin-inline: 40px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.skills-figcaption {
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.my-photo {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.portfolio-img {
+    width: 100%;
+}
+
+.portfolio-figcaption {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.portfolio-figcaption-last {
+    margin-top: 40px;
+}
+
+#about-me p {
+    margin: 0 auto 20px auto;
+}
+
+#portfolio a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #070707;
+}
+
+.contacts-list {
+    margin-bottom: 60px;
+}
+
+.contacts-list-item {
+    margin-inline: 40px;
+}
+
+.contacts-list-item img {
+    height: 40px;
+    width: 40px;
+}
+
+.contacts-list-item img:hover {
+    background-color: #b2b0b0;
+}
+
+.like-me-contacts {
+    font-size: 14px;
+}
+
+.send-message {
+    margin: 60px auto 30px auto;
+    background-color: #070707;
+    padding: 10px 16px;
+    border-radius: 22px;
+    text-align: center;
+    max-width: fit-content;
+}
+
+.send-message a {
+    text-decoration:none;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+}
+
+/* Stars from https://css-tricks.com/five-methods-for-five-star-ratings/*/
+
+   :root {
+       --star-size: 26px;
+       --star-color: #E5E5E5;
+       --star-background: black;
+   }
+.stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    position: center;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+}
+.stars::before {
+    content: '★★★★★';
+    letter-spacing: 10px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
